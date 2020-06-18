@@ -43,6 +43,7 @@ O teste consiste no desenvolvimento de um CRUD, bem simples!!
 
 ### Diferenciais
 * Completar os campos endereço, bairro, cidade e estado automaticamente após inserir o cep.
+* O CPF digitado deverá ser válido.
 
 ## O que avaliamos
 * Qualidade de código
