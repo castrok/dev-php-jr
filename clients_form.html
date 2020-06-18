@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Teste Php Jr.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- App favicon -->
+        <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
+        <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+        <link href="assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+        <link href="assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+        <link href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/ubiqui.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+            </div>
+            <!--end logo-->
+            <!-- Navbar -->
+            <nav class="navbar-custom">
+                <ul class="list-unstyled topbar-nav float-right mb-0">
+                </ul><!--end topbar-nav-->
+                <ul class="list-unstyled topbar-nav mb-0">
+                </ul>
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+
+        <div class="page-wrapper">
+            <!-- Left Sidenav -->
+            <div class="left-sidenav">
+                <ul class="metismenu left-sidenav-menu">
+                    <li>
+                        <a href="clients.html"><i class="ti-user"></i><span>Clientes</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end left-sidenav-->
+
+            <!-- Page Content-->
+            <div class="page-content">
+
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="float-right">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Clientes</a></li>
+                                        <li class="breadcrumb-item active">Gerenciar cliente</li>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">Gerenciar cliente</h4>
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div>
+                    <!-- end page title end breadcrumb -->
+                    <form class="row justify-content-center mb-5">
+                        <div class="col-xl-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Dados do cliente</h4>
+                                    <div class="row">
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <select class="select2 form-control">
+                                                    <option value="">Selecione</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3"></div>
+                                        <div class="w-100"></div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Nome</label>
+                                                <input type="text" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label>CPF</label>
+                                                <input type="text" class="form-control cpf-mask" maxlength="14" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label>RG</label>
+                                                <input type="text" class="form-control rg-mask" maxlength="11" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label>Data de nascimento</label>
+                                                <input type="text" class="form-control nasc-mask" maxlength="10" id=""  maxlength="10" placeholder="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Contatos</h4>
+                                    <div class="row">
+                                        <div class="col-6 col-md-4">
+                                            <div class="form-group">
+                                                <label>Celular</label>
+                                                <input type="text" class="form-control phone-mask" maxlength="15" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="form-group">
+                                                <label>E-mail</label>
+                                                <input type="email" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Endereço</h4>
+                                    <div class="row">
+                                        <div class="col-6 col-md-2">
+                                            <div class="form-group">
+                                                <label>Cep</label>
+                                                <input type="text" class="form-control cep-mask" maxlength="9" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="form-group">
+                                                <label>Endereço</label>
+                                                <input type="text" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <div class="form-group">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="form-group">
+                                                <label>Complemento</label>
+                                                <input type="text" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label>Bairro</label>
+                                                <input type="text" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3">
+                                            <div class="form-group">
+                                                <label>Cidade</label>
+                                                <input type="text" class="form-control" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <div class="form-group">
+                                                <label>UF</label>
+                                                <input type="text" class="form-control" maxlength="2" id=""  placeholder="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light float-right mb-5">Gravar</button>
+                        </div>
+                    </form>
+                </div><!-- container -->
+
+                <footer class="footer text-center text-sm-left">
+                    &copy; 2020 Ubiqui <span class="text-muted d-none d-sm-inline-block float-right">Todos os direitos reservados</a></span>
+                </footer><!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/plugins/dropify/js/dropify.min.js"></script>
+        <script src="assets/plugins/moment/moment.js"></script>
+        <script src="assets/pages/jquery.form-upload.init.js"></script>
+        <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+        <script src="assets/plugins/select2/select2.min.js"></script>
+        <script src="assets/pages/jquery.forms-advanced.js"></script>
+        <script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+        <script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-angular.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+        <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+        <script>
+            $(function () {
+                $('.select2').select2();
+
+                $('.cpf-mask').mask('###.###.###-##');
+                $('.rg-mask').mask('##.###.###-#');
+                $('.nasc-mask').mask('##/##/####');
+                $('.phone-mask').mask('(##) #####-####');
+                $('.cep-mask').mask('#####-###');
+            });
+         </script>
+    </body>
+</html>
